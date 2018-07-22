@@ -16,4 +16,6 @@ func main() {
 	if err := http.ListenAndServe(":" + port, server); err != nil {
 		log.Fatalf("could not listen on port %s %v", port, err)
 	}
+
+	log.Printf("Players server is listening on %s", port)
 }

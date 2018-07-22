@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"log"
 )
 
 // PlayerStore stores score information about players
@@ -17,6 +18,7 @@ type PlayerServer struct {
 }
 
 func (p *PlayerServer) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	log.Printf("Handling %s %s", r.Method, r.URL.Path)
 	player := r.URL.Path[len("/players/"):]
 
 	switch r.Method {
