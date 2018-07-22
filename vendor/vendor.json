@@ -1,7 +1,8 @@
 {
     "comment": "For other heroku options see: https://devcenter.heroku.com/articles/go-support",
-    "rootPath": "github.com/yourOrg/yourRepo",
+    "rootPath": "github.com/thedotedge/go-players",
     "heroku": {
-        "sync": false
+        "sync": false,
+        "goVersion": "go1.10"
     }
 }
