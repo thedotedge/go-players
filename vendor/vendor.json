@@ -3,6 +3,7 @@
     "rootPath": "github.com/thedotedge/go-players",
     "heroku": {
         "sync": false,
-        "goVersion": "go1.10"
+        "goVersion": "go1.10",
+        "install" : [ "./..." ]
     }
 }
