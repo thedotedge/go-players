@@ -2,4 +2,4 @@ build:
   languages:
     - go
 run:
-  web: server
+  web: main
